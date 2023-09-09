@@ -10,6 +10,15 @@ class Review:
     def review_rating(self):
         return self.rating
 
+
+    def review_customer(self):
+        pass
+        return self.customer
+    
+    def review_resturant(self):
+        return self.resturant
+        
+    
     @classmethod
     def review_all(cls, review):
         return cls.all.append(review)
@@ -17,6 +26,12 @@ class Review:
 good = Review("The Hub", "Dennis", 9)
 
 print(good.review_rating())
+
+print(good.review_customer())
+
+print(good.review_resturant())
+
+
     
 
 
